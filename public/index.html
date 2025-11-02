@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Binary Sniper God</title>
+  <style>
+    body{background:#071129;color:#e6f7ff;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;margin:0;padding:18px;}
+    .wrap{max-width:980px;margin:0 auto;}
+    header{display:flex;justify-content:space-between;align-items:center}
+    h1{color:#00e7ff;margin:0}
+    .controls{margin-top:18px}
+    select,button{padding:10px 14px;margin-right:8px;border-radius:10px;border:0;font-weight:600}
+    button.start{background:#00e7ff;color:#012;border-radius:12px}
+    button.next{background:#ffd166;color:#012}
+    .panel{margin-top:18px;padding:18px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.04));box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+    .signalTitle{font-size:20px;font-weight:700;color:#ffd54a}
+    .list{margin-top:10px}
+    .confidence{font-weight:800;color:#7af9b8}
+    .count{margin-top:12px;font-size:18px;color:#ff9b9b}
+    ul.analysis{margin:6px 0 0 20px}
+    .log{margin-top:12px;max-height:200px;overflow:auto;padding:8px;border-radius:8px;background:#011222}
+    .owner{font-size:12px;color:#9fb4c7}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Binary Sniper God</h1>
+        <div class="owner">Owner: David Mamun William</div>
+      </div>
+      <div>
+        <small>Auto-learn • Auto-heal • 100-candle pre-check • Advanced strategies</small>
+      </div>
+    </header>
+
+    <div class="controls">
+      <select id="pairSelect"></select>
+      <button class="start" id="startBtn">Start</button>
+      <button class="next" id="nextBtn">Next</button>
+    </div>
+
+    <div class="panel" id="signalPanel">
+      <div id="signalTitle">No signal yet — press Start</div>
+      <div id="signalBody"></div>
+      <div id="countdown" class="count"></div>
+    </div>
+
+    <div class="panel log" id="logBox"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+          </html>
